@@ -14,10 +14,9 @@ Trello.configure do |config|
   config.member_token = ENV['TRELLO_TOKEN']
 end
 
-BOARD_ID = 'wxKLcB13'
 LIST_REGEX = /Sprint \+1/
 
-board = Trello::Board.find(BOARD_ID)
+board = Trello::Board.find(ENV['TRELLO_BOARD'])
 list = board.lists.first { |list| list.name =~ LIST_REGEX }
 
 csv_data = CSV.generate do |csv|
