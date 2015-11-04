@@ -17,7 +17,7 @@ end
 LIST_REGEX = /Sprint \+1/
 
 board = Trello::Board.find(ENV['TRELLO_BOARD'])
-list = board.lists.first { |list| list.name =~ LIST_REGEX }
+list = board.lists.select { |list| list.name =~ LIST_REGEX }.first
 
 csv_data = CSV.generate do |csv|
   csv << %w(Title Type Description)
