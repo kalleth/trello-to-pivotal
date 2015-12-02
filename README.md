@@ -15,7 +15,7 @@ This is aimed at a developer audience; if you're not a developer, maybe get a de
 
 1. Install `Xcode` from the App Store -- it's free.
 2. Open a terminal
-3. Enable the command-line tools by typing `xcode-select -install`
+3. Enable the command-line tools by typing `xcode-select --install`
 4. Install `direnv` -- following the instructions here: https://github.com/direnv/direnv
 5. Get the board code of the trello board -- if the URL to the board is `https://trello.com/b/abCDe1/your-special-board` then the board code is `abCDe1`.
 6. Create a `.envrc` file in the app root containing the following:
