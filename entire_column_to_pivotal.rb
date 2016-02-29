@@ -14,7 +14,7 @@ Trello.configure do |config|
   config.member_token = ENV['TRELLO_TOKEN']
 end
 
-LIST_REGEX = /Sprint \+1/
+LIST_REGEX = /Pre-Planning Backlog/
 ESTIMATE_REGEX = /\((\d)\)/
 
 board = Trello::Board.find(ENV['TRELLO_BOARD'])
