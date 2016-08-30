@@ -30,4 +30,4 @@ export TRELLO_BOARD=<TRELLO BOARD CODE>
 
 ## Running the script
 
-`./entire_column_to_pivotal.rb > output.csv`, this will create a new file called `output.csv` which you can import into trello with the entire contents of a matching column.
+`./entire_column_to_pivotal.rb > output.csv`, this will create a new file called `output.csv` which you can import into pivotal with the entire contents of a matching column.
